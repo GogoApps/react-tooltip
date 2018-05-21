@@ -7,7 +7,6 @@
     "test": "make lint",
     "start": "make dev",
     "build": "make deploy",
-    "install": "make deploy",
     "deploy": "make deploy",
     "gh-pages": "gh-pages -d example",
     "github-changes": "github-changes -o wwayne -r react-tooltip -a --only-pulls --use-commit-body",

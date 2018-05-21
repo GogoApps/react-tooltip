@@ -2354,31 +2354,6 @@ exports.default = function (e, target, node, place, desiredPlace, effect, offset
     };
   }
 
-  // Change back to original place if possible
-  if (place !== desiredPlace) {
-    if (desiredPlace === 'top' && !outsideTopResult.result) {
-      return {
-        isNewState: true,
-        newState: { place: 'top' }
-      };
-    } else if (desiredPlace === 'left' && !outsideLeftResult.result) {
-      return {
-        isNewState: true,
-        newState: { place: 'left' }
-      };
-    } else if (desiredPlace === 'right' && !outsideRightResult.result) {
-      return {
-        isNewState: true,
-        newState: { place: 'right' }
-      };
-    } else if (desiredPlace === 'bottom' && !outsideBottomResult.result) {
-      return {
-        isNewState: true,
-        newState: { place: 'bottom' }
-      };
-    }
-  }
-
   // Return tooltip offset position
   return {
     isNewState: false,
